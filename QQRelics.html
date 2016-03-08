@@ -1,0 +1,512 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QQ Relics</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <style type="text/css">
+            h1 {
+                margin: 20px;
+                position:fixed;
+                background-color: white;
+                font-size: 18pt;
+                font-weight:bolder;
+            }
+            
+            form {
+                position:fixed;
+                background-color: blue;
+                font-size: 10pt;
+                color: white;
+                font-weight: bolder;
+            }
+            
+            #showEn {
+                position:fixed;
+                margin: 30px;
+                margin-left: 180px;
+                background-color: blue;
+                color: white;
+            }
+            #form1 {
+                margin: 30px;
+                margin-left: 300px;
+            }
+            
+            #form2 {
+                margin: 30px;
+                margin-left: 500px;
+            }
+            
+            #confirm {
+                margin-top:60px;
+                margin-left: 650px;
+                position:fixed;
+                
+            }
+            
+            body {
+                 height: 300%;
+                 width: auto;
+                 font-family: serif;
+                
+            }
+            
+            div.ad{
+                position: fixed;
+                bottom: 20px;
+            }
+            
+            #ad2{
+                position:fixed;
+                bottom:20px;
+                right:30px;
+                height:100px;
+            }
+            
+            
+            div.profile {
+                margin-top: 70px;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 200px;
+                height：600px;
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px;
+                border: 1px grey solid;
+                background-color: white;
+            }
+            
+
+            div.profile img {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            
+            div.loading {
+                display: inline-block;
+                position:fixed;  
+                top: 45%;
+                left: 45%;
+                z-index: 10;
+            }
+            
+            table{
+              border-collapse:collapse;
+            }
+
+            table,th, td{
+              border: 1px solid black;
+            }
+            
+            tr.en {
+                background-color: aqua;
+            
+            }
+            #bgvideo {
+                z-index: -10;
+                left:0;
+                top:0;
+                width: 100%;
+                height:100%;
+                position: fixed;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('tr.en').hide();
+            })
+            
+            
+            $(document).ready(function(){
+              $("#showEn").click(function(){
+              $(".en").toggle();
+              });
+            });
+            
+            $("img.ad").click(function(){
+              $(this).hide();
+            });
+            
+            function disp_alert()
+            {
+            alert("Data server can not be reached." + "\n" + "Please try again later.")
+            }
+        </script>
+    </head>
+    
+    <body>
+        <!--<iframe frameborder="0" src="http://web.archive.org/web/20031122091404/http://im.qq.com/"></iframe>-->
+       <!--<iframe id="bgvideo" src="https://www.youtube.com/embed/zlN5SdtIT_8?autoplay=1;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" ></iframe>-->
+        <h1>
+            <img style="height:26px;"src="https://c1.staticflickr.com/3/2178/3529495395_eb45993120.jpg">QQ Relics.
+        </h1>
+        
+        <button id="showEn">显示英文/Show EN</button>
+        
+        <form id="form1">
+            选择年份/Select Years
+        <select name="年份/Years">
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+        <option  selected="selected">2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+
+
+            </select>
+            
+        </form>
+        
+        <form id="form2">
+            选择性别/Select Gender
+        <select name="选择性别/Gender">
+        <option  selected="selected">Both</option>
+            <option>Female</option>
+            <option>Male</option>
+
+            </select>
+        </form>
+        
+        <button id="confirm" onclick="disp_alert()">确认选择/Confirm</button>
+        
+        <div class='ad'>
+            <img class='ad' src="http://web.archive.org/web/20040710075850/http://www.qq.com/images/sms/ad/ad_qb2_101x80.gif">
+            <img class='ad' src='http://web.archive.org/web/20040711010730im_/http://im.qq.com/qq/images/ad/QQ_Yesky.gif'>
+            <img calss='ad' id='ad2' src="http://web.archive.org/web/20040719075458im_/http://im.qq.com/images/index2_13_3.gif">
+        </div>
+        
+        <div class="profile">
+        <img src="1.gif">
+            <table border="1">
+                <tr class="ch">
+                <td>网名</td>
+                <td>网事如风</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>Old Stories Gone with Wind</td>
+                </tr>
+                <tr class="ch">
+                <td >等级</td>
+                <td>48级<img src="http://im.qq.com/qq/images/time_sun.gif"></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>48th<img src="http://im.qq.com/qq/images/time_sun.gif"></td>
+                </tr>
+                <tr class="ch">
+                <td>个性签名</td>
+                <td>我可能不会爱你</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>I might never be able to love YOU.</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1994-07-07</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1994-07-07</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>巨蟹座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Cancer</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="profile">
+        <img src="2.gif">
+            <table border="1">
+                <tr class="ch">
+                <td>网名</td>
+                <td>风和日丽</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>Sunny daay</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>28级<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>28th<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="ch">
+                <td>个性签名</td>
+                <td>晴天，是你给我的礼物</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>Sunny day, it's the best gift you ever gave me.</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1990-11-12</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1990-11-12</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>射手座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Sagittarius</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="profile">
+            <img src="3.gif">
+            <table border="1">
+                <tr class="ch">
+                <td>网名</td>
+                <td>小師妹de哥哥</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>Lil Sister's Boy</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>12级<img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>12rd<img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="ch">
+                <td>个性签名</td>
+                <td>小妹妹跟我走，哥哥会给你幸福</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>Go with me lil sis, I'll give you happiness</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1995-03-17</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1995-03-17</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>双鱼座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Pisces</td>
+                </tr>
+                
+        </table>
+        </div>
+        
+        <div class="profile">
+            <img src="5.gif">
+            <table border="0">
+                <tr class="ch">
+                <td>网名</td>
+                <td>放飞心情</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>Let good moods fly</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>37级<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>37th<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="ch">
+                <td>个性签名</td>
+                <td>心情就像星空</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>Fly beyond sky and let self high.</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1991-07-29</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1991-07-29</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>狮子座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Leo</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="profile">
+            <img src="4.gif">
+            <table border="0">
+                <tr class="ch">
+                <td>昵称</td>
+                <td>棒棒糖公主</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>Princess Lollipop</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>23级<img src="http://im.qq.com/qq/images/time_sun.gif"></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>23rd<img src="http://im.qq.com/qq/images/time_sun.gif"></td>
+                </tr>
+                 <tr class="ch">
+                <td>个性签名</td>
+                <td>我爱棒棒糖</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>I love lollipops!</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1993-04-17</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1993-04-17</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>白羊座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Aries</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="profile">
+            <img src="6.gif">
+            <table border="0">
+                <tr class="ch">
+                <td>昵称</td>
+                <td>都市情缘</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>CityLovely</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>19级<img src="http://im.qq.com/qq/images/time_sun.gif"><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>19th<img src="http://im.qq.com/qq/images/time_sun.gif"><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                 <tr class="ch">
+                <td>个性签名</td>
+                <td>只有咳嗽和喜欢你控制不住</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>Can't help missing U</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1993-02-12</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1993-02-12</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>水瓶座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Aquarius</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="profile">
+            <img src="7.gif">
+            <table border="0">
+                <tr class="ch">
+                <td>网名</td>
+                <td>LOVE和永远</td>
+                </tr>
+                <tr class="en">
+                <td>ALIAS</td>
+                <td>LOVE N FOREVER</td>
+                </tr>
+                <tr class="ch">
+                <td>等级</td>
+                <td>35级<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="en">
+                <td>RATE</td>
+                <td>35th<img src='http://im.qq.com/qq/images/time_yueliang.gif'><img src='http://im.qq.com/qq/images/time_yueliang.gif'></td>
+                </tr>
+                <tr class="ch">
+                <td>个性签名</td>
+                <td>I love you - 李佳佳</td>
+                </tr>
+                <tr class="en">
+                <td>QQ Signiture</td>
+                <td>I love you - Li Jiajia</td>
+                </tr>
+                <tr class="ch">
+                <td>生日</td>
+                <td>1991-08-19</td>
+                </tr>
+                <tr class="en">
+                <td>Birthday</td>
+                <td>1991-08-19</td>
+                </tr>
+                <tr class="ch">
+                <td>星座</td>
+                <td>狮子座</td>
+                </tr>
+                <tr class="en">
+                <td>Zodiac Sign</td>
+                <td>Leo</td>
+                </tr>
+        </table>
+        </div>
+        
+        
+        <div class="loading">
+            <img style="height:60px;"src="http://www.snhu.edu/assets/SNHU/images/common/spinner.gif">
+        </div>
+    </body>
+</html>
